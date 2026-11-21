@@ -2,6 +2,10 @@
 
 Tech Challenge da Fase 4 da Pós-Tech Full Stack Development.
 
+| Integrante | RM |
+|---|---|
+| Matheus Akira Nakaoka Hiramatsu | rm373787 |
+
 O Blog Escolar é o app em que professores publicam os conteúdos das aulas e os alunos leem e
 comentam. Nesta fase construímos a versão mobile em **React Native (Expo)**. O repositório também
 inclui a **API REST em Node.js** usada pelo app, com posts, comentários, professores, alunos e
@@ -9,17 +13,17 @@ autenticação. Assim, dá para rodar tudo localmente sem depender de outro serv
 
 | Login | Posts | Busca | Leitura e comentários |
 |---|---|---|---|
-| ![Login](docs/screenshots/login.png) | ![Lista de posts](docs/screenshots/home-professor.png) | ![Busca](docs/screenshots/busca.png) | ![Post](docs/screenshots/post-detalhe.png) |
+| ![Login](documentação/screenshots/login.png) | ![Lista de posts](documentação/screenshots/home-professor.png) | ![Busca](documentação/screenshots/busca.png) | ![Post](documentação/screenshots/post-detalhe.png) |
 
 | Escrever post | Gerenciar posts | Professores | Visão do aluno |
 |---|---|---|---|
-| ![Escrever post](docs/screenshots/novo-post.png) | ![Gerenciar posts](docs/screenshots/admin.png) | ![Professores](docs/screenshots/professores.png) | ![Aluno](docs/screenshots/home-aluno.png) |
+| ![Escrever post](documentação/screenshots/novo-post.png) | ![Gerenciar posts](documentação/screenshots/admin.png) | ![Professores](documentação/screenshots/professores.png) | ![Aluno](documentação/screenshots/home-aluno.png) |
 
 Outros documentos:
 
-- [`docs/DOCUMENTACAO.md`](docs/DOCUMENTACAO.md): arquitetura, uso e relato da equipe.
-- [`docs/Documentacao-Blog-Escolar.docx`](docs/Documentacao-Blog-Escolar.docx): a mesma documentação em Word.
-- [`docs/ROTEIRO-VIDEO.md`](docs/ROTEIRO-VIDEO.md): roteiro da apresentação gravada.
+- [`documentação/DOCUMENTACAO.md`](documentação/DOCUMENTACAO.md): arquitetura, uso e relato pessoal.
+- [`documentação/Documentacao-Blog-Escolar.docx`](documentação/Documentacao-Blog-Escolar.docx): a mesma documentação em Word.
+- [`documentação/ROTEIRO-VIDEO.md`](documentação/ROTEIRO-VIDEO.md): roteiro da apresentação gravada.
 
 ## Sumário
 
@@ -151,7 +155,7 @@ mobile/
     services/             cliente HTTP, endpoints e armazenamento do token
     utils/                datas, textos e caixas de confirmação
     theme.ts              cores, fontes e espaçamentos
-docs/                     documentação e imagens
+documentação/             documentação e imagens
 ```
 
 ### Navegação e permissões
@@ -311,7 +315,7 @@ Erros possíveis:
 | Estilização própria | `theme.ts`, `Notebook.tsx` e `Highlight.tsx` |
 | Integração com a API e permissões por papel | `src/services/` e `backend/` |
 | Context API | `src/contexts/AuthContext.tsx` |
-| Documentação | este README e a pasta `docs/` |
+| Documentação | este README e a pasta `documentação/` |
 
 ## 8. Testes e qualidade
 

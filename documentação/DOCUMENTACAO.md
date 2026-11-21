@@ -2,6 +2,9 @@
 
 Pós-Tech Full Stack Development, Fase 4, Tech Challenge.
 
+**Integrante:** Matheus Akira Nakaoka Hiramatsu (rm373787)
+**Repositório:** https://github.com/matheushiramatsu/TechChallenge4
+
 Este documento cobre o item 3 da entrega: arquitetura do sistema, uso da aplicação e o relato das
 experiências e desafios da equipe. Os comandos de instalação e a lista completa de endpoints estão
 no [`README.md`](../README.md).
@@ -217,11 +220,38 @@ bem no Android. Por isso, centralizamos os estilos de texto em `theme.ts` (`type
 - Uma identidade visual ligada ao tema, o material escolar, ajudou a tomar decisões de layout,
   como trocar os cartões por folhas de caderno.
 
-### 4.3 Experiência da equipe
+### 4.3 Relato pessoal
 
-_A equipe deve preencher esta seção antes da entrega: como dividimos o trabalho, como nos
-organizamos (branches, revisões e reuniões), as dificuldades de cada integrante e o que faríamos
-diferente._
+Fiz este Tech Challenge sozinho, então a "equipe" fui eu mesmo. Isso teve um lado bom e um lado
+ruim. Não precisei alinhar decisões com ninguém, mas também não tive com quem dividir as dúvidas
+nem alguém para revisar o meu código.
+
+Comecei transformando o enunciado em uma lista de requisitos, para não deixar nada para trás. Essa
+lista virou a tabela de requisitos do README, que usei como checklist até o fim. Decidi colocar a
+API no mesmo repositório do app. Assim eu conseguia rodar tudo na minha máquina e garantir que
+existiam todos os endpoints que esta fase pede, principalmente os de professores e alunos e a
+diferença de permissão entre eles. A API foi a parte em que me senti mais seguro, porque já vinha
+trabalhando com Node.js e Express nas fases anteriores.
+
+No app, a maior curva de aprendizado foi o Expo Router. Eu estava acostumado a montar a navegação
+na mão, e entender que cada arquivo vira uma tela levou um tempo. A parte de proteger as telas por
+papel também me fez quebrar a cabeça: no começo eu pensava em verificar o usuário dentro de cada
+tela, até descobrir o `Stack.Protected`. Outra coisa que me travou foi fazer o app falar com a API.
+No celular, `localhost` não aponta para o computador, e só entendi isso depois de ver o erro de
+conexão algumas vezes.
+
+A primeira versão do visual funcionava, mas ficou com cara de template, com cartões brancos,
+detalhes em roxo e avatares com iniciais. Não gostei do resultado e refiz a identidade visual
+usando o próprio material escolar como referência: o caderno com margem e pauta, o quadro-negro e
+o marca-texto. Foi a parte mais divertida do projeto, e acho que deixou o app com a cara de uma
+escola.
+
+Se fosse começar de novo, eu faria três coisas diferentes:
+
+- testaria no celular de verdade desde o primeiro dia, e não só no fim;
+- escreveria os testes da API antes de construir as telas, e não depois;
+- faria commits menores, um por funcionalidade, em vez de subir tudo de uma vez. Isso deixaria o
+  histórico do repositório muito mais fácil de acompanhar.
 
 ## 5. Próximos passos
 
