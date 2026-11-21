@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+*.log
+
+# Enunciado do desafio (material do curso)
+Postech - Fase 4 - Tech Challenge.pdf

@@ -1,0 +1,23 @@
+{
+  "name": "blog-escolar-api",
+  "version": "1.0.0",
+  "description": "API REST do Blog Escolar (posts, professores, alunos e autenticação) - Tech Challenge Fase 4",
+  "type": "module",
+  "main": "src/server.js",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/server.js",
+    "dev": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning --watch src/server.js",
+    "seed": "node --env-file-if-exists=.env --disable-warning=ExperimentalWarning src/db/seed.js --reset",
+    "test": "node --disable-warning=ExperimentalWarning --test \"test/**/*.test.js\""
+  },
+  "license": "MIT",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3"
+  }
+}
